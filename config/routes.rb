@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+ root 'home#index'
 
-  root 'home#index'
+  devise_for :users
 
   resources :conversations, only: [:create] do
   	member do
